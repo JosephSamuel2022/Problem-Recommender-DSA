@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Visualizations</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .navbar {
+            background-color: #333;
+            padding: 10px;
+            color: #fff;
+            text-align: left;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .visualization {
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .visualization img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="/">Recommend Problems</a>
+        <a href="/visualizations">Visualizations</a>
+    </div>
+    <h1>Visualizations</h1>
+    <div class="visualization">
+        <h2>Distribution of Ratings</h2>
+        <img src="data:image/png;base64,{{ rating_hist }}" alt="Rating Histogram">
+    </div>
+    <br>
+    <div class="visualization">
+        <h2>Top 10 Most Common Tags</h2>
+        <img src="data:image/png;base64,{{ top_tags_bar_chart }}" alt="Top Tags Bar Chart">
+    </div>
+    <br>
+    <div class="visualization">
+        <h2>Rating vs. Solved Count</h2>
+        <img src="data:image/png;base64,{{ rating_solved_count }}" alt="Rating vs. Solved Count Plot">
+    </div>
+    <div class="visualization">
+        <h2>Correlation Matrix</h2>
+        <img src="data:image/png;base64,{{ corr_heatmap }}" alt="Correlation Matrix Plot">
+    </div>
+    <div class="visualization">
+        <h2>Distribution of Contest IDs</h2>
+        <img src="data:image/png;base64,{{ contest_id_distribution }}" alt="Distribution of Contest IDs Plot">
+    </div>
+</body>
+
+</html>

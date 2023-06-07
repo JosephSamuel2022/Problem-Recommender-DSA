@@ -46,6 +46,7 @@ def user_dataframe(handle):
 
 
 def problems_recommended(strong_areas, weak_areas):
+    num_recommendations = min(len(strong_areas), len(weak_areas))
     strong_areas_problem = recommendation.user_recommendation(
         strong_areas, strong_areas)
     weak_areas_problem = recommendation.user_recommendation(

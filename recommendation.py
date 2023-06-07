@@ -30,7 +30,7 @@ def get_recommendations(in_dataframe, name, recommended_df, from_df=problem_data
     except:
         pass
 
-    sim_scores = sim_scores[1:50]
+    sim_scores = sim_scores[1:10]
     problem_indices = [i[0] for i in sim_scores]
     for problem_id in problem_indices:
         problem_name = from_df['name'].iloc[problem_id]

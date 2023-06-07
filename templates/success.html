@@ -62,7 +62,7 @@
         <h1>Strong Areas</h1>
         {% for table in tables %}
         <div class="table-container">
-            <!-- {{titles[loop.index]}} -->
+            
             {{ table|safe }}
         </div>
         {% endfor %}
@@ -70,7 +70,7 @@
         <h1>Weak Areas</h1>
         {% for table in wtables %}
         <div class="table-container">
-            <!-- {{wtitles[loop.index]}} -->
+            
             {{ table|safe }}
         </div>
         {% endfor %}
